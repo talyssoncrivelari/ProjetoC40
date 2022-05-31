@@ -31,7 +31,7 @@ class Game{
     
     player2 = createSprite(800, 500);
     player2.addImage("player2", player_img);
-    players=[player1, player2];
+    players = [player1, player2];
 
         }
     
@@ -58,11 +58,11 @@ class Game{
                        
                      if(index === player.index){
                          
-                         fill("red");
+                         fill("white");
                          textSize(20);
                          //adicione o código para exibir o nome do jogador na respectiva cesta
-                         text("" + player.name, player1.x - 50, player1.y + 75);
-                         text("" + player.name, player2.x - 50, player2.y + 75);
+                         text("" + allPlayers.player1.name, player1.x - 25, player1.y + 75);
+                         text("" + allPlayers.player2.name, player2.x - 25, player2.y + 75);
                          
                      }
                     
